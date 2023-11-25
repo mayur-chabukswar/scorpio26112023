@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uber-like UI</title>
+  <title>Uber-like Login</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="header">
-    <h1>Uber-like UI</h1>
+    <h1>Uber-like Login</h1>
   </div>
-  <div class="map-container" id="map"></div>
-  <div class="request-ride">
-    <button onclick="requestRide()">Request a Ride</button>
-  </div>
-  <div class="ride-details" id="rideDetails">
-    <h2>Ride Details</h2>
-    <p id="driverName">Driver: John Doe</p>
-    <p id="carModel">Car: Sedan</p>
-    <p id="carPlate">Plate Number: ABC 123</p>
+  <div class="login-container">
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username">
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <label for="rememberMe">Remember Me</label>
+    <input type="checkbox" id="rememberMe">
+    <button onclick="login()">Login</button>
   </div>
   <script src="app.js"></script>
 </body>
